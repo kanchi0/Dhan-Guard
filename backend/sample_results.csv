@@ -1,0 +1,25 @@
+true,predicted,confidence_pct,margin_pct,app_answer,correct
+Bacterial Leaf Blight,Bacterial Leaf Blight,84.0,71.0,answered,yes
+Bacterial Leaf Blight,Bacterial Leaf Blight,76.2,67.4,answered,yes
+Bacterial Leaf Blight,Bacterial Leaf Blight,69.9,42.2,answered,yes
+Brown Spot,Brown Spot,94.9,89.8,answered,yes
+Brown Spot,Brown Spot,70.5,55.0,answered,yes
+Brown Spot,Brown Spot,99.9,99.8,answered,yes
+Healthy Rice Leaf,Healthy Rice Leaf,100.0,100.0,answered,yes
+Healthy Rice Leaf,Healthy Rice Leaf,100.0,100.0,answered,yes
+Healthy Rice Leaf,Healthy Rice Leaf,99.7,99.5,answered,yes
+Leaf Blast,Narrow Brown Leaf Spot,79.3,60.2,answered,no
+Leaf Blast,Leaf Blast,84.8,70.4,answered,yes
+Leaf Blast,Leaf Blast,95.3,92.2,answered,yes
+Leaf scald,Leaf scald,96.0,93.8,answered,yes
+Leaf scald,Leaf scald,97.7,96.8,answered,yes
+Leaf scald,Leaf scald,91.3,85.7,answered,yes
+Narrow Brown Leaf Spot,Narrow Brown Leaf Spot,98.2,96.7,answered,yes
+Narrow Brown Leaf Spot,Narrow Brown Leaf Spot,98.7,97.7,answered,yes
+Narrow Brown Leaf Spot,Brown Spot,52.9,23.6,declined,no
+Rice Hispa,Rice Hispa,100.0,100.0,answered,yes
+Rice Hispa,Rice Hispa,98.6,97.2,answered,yes
+Rice Hispa,Rice Hispa,100.0,100.0,answered,yes
+Sheath Blight,Leaf Blast,28.1,2.5,declined,no
+Sheath Blight,Sheath Blight,100.0,100.0,answered,yes
+Sheath Blight,Sheath Blight,99.3,99.0,answered,yes

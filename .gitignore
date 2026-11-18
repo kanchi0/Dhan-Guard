@@ -1,0 +1,23 @@
+# Secrets
+.env
+.env.*
+**/.env
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Private data
+backend/uploads/
+backend/wheels/
+backend/eval_data/
+dist/
+
+# Editor and system
+.vscode/
+Thumbs.db

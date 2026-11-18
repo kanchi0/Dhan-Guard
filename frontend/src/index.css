@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* DhanGuard design tokens.
+   "--color-*: initial" removes Tailwind's default colors,
+   so only the colors below can be used. */
+@theme {
+  --color-*: initial;
+
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --color-paper: #F6F4EC;    /* page background, warm off-white */
+  --color-ink: #1B2A21;      /* main text, deep green-black */
+  --color-field: #2F5D3A;    /* primary, rice-field green */
+  --color-harvest: #C98A1B;  /* accent: warnings and uncertain state only */
+  --color-brick: #A63D2F;    /* danger: errors only */
+  --color-sage: #D9DDCB;     /* borders and dividers */
+
+  /* One font family for headings and body */
+  --font-serif: "DM Sans Variable", system-ui, sans-serif;
+  --font-sans: "DM Sans Variable", system-ui, sans-serif;
+}
+
+/* Base text size. Every size and spacing in the app is relative to this,
+   so one number makes the whole app bigger or smaller. */
+html {
+  font-size: 112.5%; /* 18px instead of the usual 16px */
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Visible keyboard focus ring on every interactive element */
+:focus-visible {
+  outline: 2px solid var(--color-field);
+  outline-offset: 2px;
+}
+
+/* Soft fade when a page opens */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.page-fade {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Gentle hover feedback, using only the project colours */
+button,
+a {
+  transition: background-color 0.15s ease;
+}
+button[class*="bg-field"]:not(:disabled):hover,
+a[class*="bg-field"]:hover {
+  background-color: color-mix(in srgb, var(--color-field) 85%, black);
+}
+button[class*="border-field"]:not(:disabled):hover,
+button[class*="border-sage"]:not(:disabled):hover,
+a[class*="border-field"]:hover {
+  background-color: color-mix(in srgb, var(--color-sage) 40%, transparent);
+}
+
+/* Respect people who turn animation off in their phone settings */
+@media (prefers-reduced-motion: reduce) {
+  .page-fade {
+    animation: none;
+  }
+  button,
+  a {
+    transition: none;
+  }
+}
